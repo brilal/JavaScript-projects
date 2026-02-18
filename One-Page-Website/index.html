@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My One-Page Website</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Page Website</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-  <header>
-    <h1>Welcome to My One-Page Website</h1>
-  </header>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>This is my one-page website project.</p>
-  </section>
+    <!-- Hero Section -->
+    <header id="home">
+        <h1>Welcome to My One‑Page Website</h1>
+        <p>This is a simple one‑page site with a gallery and lightbox feature.</p>
+    </header>
 
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <img src="images/photo1.jpg" class="lightbox-image" alt="Photo 1">
-      <img src="images/photo2.jpg" class="lightbox-image" alt="Photo 2">
-      <img src="images/photo3.jpg" class="lightbox-image" alt="Photo 3">
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Image Gallery</h2>
+        <div class="gallery">
+            <img src="images/photo1.jpg" alt="Photo 1" class="lightbox-image">
+            <img src="images/photo2.jpg" alt="Photo 2" class="lightbox-image">
+            <img src="images/photo3.jpg" alt="Photo 3" class="lightbox-image">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can add your contact details or a short message here.</p>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Expanded view">
     </div>
-  </section>
 
-  <!-- Lightbox Modal -->
-  <div id="lightbox-modal" class="lightbox-modal">
-    <span class="lightbox-close">&times;</span>
-    <img id="lightbox-img" class="lightbox-content">
-  </div>
-
-  <script src="js/script.js"></script>
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>
