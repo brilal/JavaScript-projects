@@ -43,7 +43,8 @@ A complete personal portfolio built with:
 ---
 
 ## 🌐 Live Portfolio Website  
-**URL:** *Add your deployed portfolio link here*
+URL: https://brilal.github.io/portfolio-website/
+
 
 ---
 
