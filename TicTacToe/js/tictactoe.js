@@ -15,7 +15,11 @@ function handleClick(event) {
     if (board[index] !== "") return; // prevent overwriting
 
     board[index] = currentPlayer;
-    event.target.textContent = currentPlayer;
+    const img = document.createElement("img");
+img.src = currentPlayer === "X" ? "../images/x.png" : "../images/o.png";
+img.classList.add("piece");
+event.target.appendChild(img);
+
 
     if (checkWin()) {
         alert(currentPlayer + " wins!");
