@@ -22,14 +22,16 @@ event.target.appendChild(img);
 
 
     if (checkWin()) {
-        alert(currentPlayer + " wins!");
-        return;
-    }
+    document.getElementById("result").textContent = currentPlayer + " Wins!";
+    return;
+}
 
-    if (board.every(cell => cell !== "")) {
-        alert("It's a tie!");
-        return;
-    }
+if (board.every(cell => cell !== "")) {
+    document.getElementById("result").textContent = "Tie Game!";
+    return;
+}
+
+    
 
     currentPlayer = currentPlayer === "X" ? "O" : "X";
 }
@@ -50,4 +52,6 @@ resetButton.addEventListener("click", () => {
     board = ["", "", "", "", "", "", "", "", ""];
     cells.forEach(cell => cell.textContent = "");
     currentPlayer = "X";
+    document.getElementById("result").textContent = "";
+
 });
